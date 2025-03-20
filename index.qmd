@@ -995,9 +995,9 @@ Post-hoc tests are pivotal when ANOVA reveals significant differences among grou
 
 There are two common post-hoc methods: Tukey's HSD, named after statistician John Tukey, which is known for its robustness in multiple comparisons. There's also the Bonferroni correction, named after mathematician Carlo Bonferroni, which adjusts p-values to control for Type I errors. For broader comparisons, use Tukey's HSD; Bonferroni is better for reducing false positives in more focused tests.
 
-1 (https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey)[https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey]
+1 [https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey](https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey)
 
-2 (https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni)[https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni]
+2 [https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni](https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni)
 
 #### The dataset: marketing ad campaigns {.unnumbered}
 

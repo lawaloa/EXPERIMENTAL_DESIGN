@@ -281,7 +281,7 @@ compare_df_non_rand.columns = ['group1', 'group2']
 
 # Print to assess
 print(compare_df_non_rand)</code></pre>
-<div id="f3e42c42" class="cell" data-execution_count="1">
+<div id="9c365e3d" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -317,13 +317,13 @@ print(compare_df_non_rand)</code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>           group1      group2
 count  250.000000  250.000000
-mean    51.926500   79.594850
-std      7.674695    9.085668
-min     39.086781   65.104160
-25%     45.134074   71.577829
-50%     52.013520   78.587657
-75%     58.473777   87.514939
-max     64.944986   95.799142</code></pre>
+mean    52.881443   80.928000
+std      7.381485    8.988698
+min     39.165461   65.224213
+25%     47.169705   73.901509
+50%     53.194238   80.949582
+75%     58.828407   89.198278
+max     65.097701   95.396556</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -358,7 +358,7 @@ Note
 <li><p>Put the remaining 250 subjects into <code>group2</code>.</p></li>
 <li><p>Concatenate the descriptive statistics of your two newly created DataFrames.</p></li>
 </ul>
-<div id="09463cad" class="cell" data-execution_count="2">
+<div id="17de100b" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -398,13 +398,13 @@ Note
 <div class="cell-output cell-output-stdout">
 <pre><code>           group1      group2
 count  250.000000  250.000000
-mean    64.647694   66.548983
-std     16.051607   16.371179
-min     39.171893   39.238426
-25%     50.058385   52.571091
-50%     63.258422   66.588176
-75%     77.444701   80.524985
-max     95.021115   95.731789</code></pre>
+mean    64.451074   67.521437
+std     16.515149   16.942613
+min     39.165751   39.231547
+25%     49.537486   53.044788
+50%     64.135085   67.412082
+75%     77.782505   81.534922
+max     95.285790   95.738079</code></pre>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -480,7 +480,7 @@ Note
 <li><p>Assign the remaining subjects to a DataFrame called <code>block_2</code> and set the <code>block</code> column to 2 for this DataFrame.</p></li>
 <li><p>Concatenate the blocks together into a single DataFrame, and print the count of each value in the <code>block</code> column to confirm the blocking worked.</p></li>
 </ul>
-<div id="a8398e40" class="cell" data-execution_count="3">
+<div id="e686a497" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -532,7 +532,7 @@ Name: count, dtype: int64</code></pre>
 <li><p>Repeat for the second block (all the not <code>high_wealth</code> subjects), setting the <code>Block</code> column to 2, and perform the group assignment (randomly assigning to Treatment (T) or control (C) group).</p></li>
 <li><p>Concatenate the four groups created into <code>wealth_data_stratified</code> in order of creation (strata 1 group 1, strata 1 group 2, etc.)</p></li>
 </ol>
-<div id="35e7f1d5" class="cell" data-execution_count="4">
+<div id="fbaa9067" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -657,7 +657,7 @@ Caution
 <li><p>Create a qq plot with a standard line of the chickens’ <code>weight</code> to assess normality visually.</p></li>
 <li><p>Subset <code>chicken_data</code> for a <code>'Time'</code> of 2, and plot the KDE of <code>'weight'</code> from <code>subset_data</code> to check if data is normal across time.</p></li>
 </ol>
-<div id="ab85ba82" class="cell" data-execution_count="5">
+<div id="ea1a1ac9" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -719,7 +719,7 @@ Caution
 <li><p>Run a Shapiro-Wilk test of normality on the <code>'weight'</code> column and print the test statistic and p-value.</p></li>
 <li><p>Run an Anderson-Darling test for normality and print out the test statistic, significance levels, and critical values from the returned object.</p></li>
 </ol>
-<div id="cbad1d2e" class="cell" data-execution_count="6">
+<div id="42532b8d" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -806,7 +806,7 @@ Critical Values: [0.572 0.652 0.782 0.912 1.085]</code></pre>
 <li>Create a pivot table with <code>'Messaging_Style'</code> as the index and <code>'Time_of_Day'</code> as the columns, computing the mean of Conversions.</li>
 <li>Print this pivot table.</li>
 </ul>
-<div id="845a1247" class="cell" data-execution_count="7">
+<div id="8c70df7d" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -860,7 +860,7 @@ Note
 <ul>
 <li>Visualize interactions between <code>Messaging_Style</code> and <code>Time_of_Day</code> with respect to conversions by creating an annotated cool-warm heatmap of <code>marketing_pivot</code>.</li>
 </ul>
-<div id="2c55791b" class="cell" data-execution_count="8">
+<div id="d0f6b108" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -984,7 +984,7 @@ Formal           432.913043  411.096000</code></pre>
 <li>Use a lambda function to apply the ANOVA test within each <code>block</code>, specifying the <code>lambda</code> function’s argument.</li>
 <li>For each treatment group within the blocks, filter <code>prod_df</code> based on the <code>'Treatment'</code> column values and select the <code>'productivity_score'</code> column.</li>
 </ul>
-<div id="2b48148a" class="cell" data-execution_count="9">
+<div id="19b58ddb" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -1127,7 +1127,7 @@ Note
 <ol start="3" type="1">
 <li>Design an <code>lmplot</code> to see <code>hue='Diet'</code> effects on <code>y='weight'</code> adjusted for <code>x='Time'</code>.</li>
 </ol>
-<div id="b16aa8ca" class="cell" data-execution_count="10">
+<div id="660d281d" class="cell" data-execution_count="10">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -1217,8 +1217,8 @@ Note
 Dep. Variable:                 weight   R-squared:                       0.001
 Model:                            OLS   Adj. R-squared:                  0.001
 Method:                 Least Squares   F-statistic:                     4.288
-Date:                Wed, 19 Mar 2025   Prob (F-statistic):             0.0138
-Time:                        17:13:36   Log-Likelihood:                -37536.
+Date:                Thu, 20 Mar 2025   Prob (F-statistic):             0.0138
+Time:                        11:11:50   Log-Likelihood:                -37536.
 No. Observations:                6732   AIC:                         7.508e+04
 Df Residuals:                    6729   BIC:                         7.510e+04
 Df Model:                           2                                         
@@ -1292,7 +1292,7 @@ Notes:
 <ul>
 <li>Use a list comprehension to filter into <code>groups</code> iterating over the <code>catalyst_types</code> and each of their <code>'Reaction_Time'</code>s.</li>
 </ul>
-<div id="93dd02bf" class="cell" data-execution_count="11">
+<div id="fbaf12ed" class="cell" data-execution_count="11">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1333,7 +1333,7 @@ Notes:
 <li>Create a contingency table comparing <code>'Department'</code> and <code>'Wellness_Program_Status'</code>.</li>
 <li>Perform a chi-square test of association on the contingency table and print the p-value.</li>
 </ul>
-<div id="d86024df" class="cell" data-execution_count="12">
+<div id="2ab01cc1" class="cell" data-execution_count="12">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -1383,7 +1383,7 @@ Notes:
 <li><p>Filter <code>'Strategy_Type'</code> on <code>'Quantitative'</code> to retrieve their <code>'Annual_Return'</code> and do the same for <code>'Fundamental'</code> strategies.</p></li>
 <li><p>Complete for the two groups an independent samples t-test and print the p-value.</p></li>
 </ol>
-<div id="6be35b02" class="cell" data-execution_count="13">
+<div id="e98b9b43" class="cell" data-execution_count="13">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -1420,8 +1420,8 @@ Notes:
 <section id="key-post-hoc-methods" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="key-post-hoc-methods">Key post-hoc methods</h4>
 <p>There are two common post-hoc methods: Tukey’s HSD, named after statistician John Tukey, which is known for its robustness in multiple comparisons. There’s also the Bonferroni correction, named after mathematician Carlo Bonferroni, which adjusts p-values to control for Type I errors. For broader comparisons, use Tukey’s HSD; Bonferroni is better for reducing false positives in more focused tests.</p>
-<p>1 (https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey)[https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey]</p>
-<p>2 (https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni)[https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni]</p>
+<p>1 <a href="https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey">https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey</a></p>
+<p>2 <a href="https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni">https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni</a></p>
 </section>
 <section id="the-dataset-marketing-ad-campaigns" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="the-dataset-marketing-ad-campaigns">The dataset: marketing ad campaigns</h4>
@@ -1460,7 +1460,7 @@ Notes:
 <li>Create a pivot table to calculate the mean <code>'Anxiety_Reduction'</code> value across groups of <code>'Therapy_Type'</code> in this data.</li>
 <li>Filter groups of therapy types and their <code>'Anxiety_Reduction'</code> values by first creating a list of the three therapy types: <code>'CBT'</code>, <code>'DBT'</code>, and <code>'ACT'</code>.</li>
 </ol>
-<div id="15ed5e04" class="cell" data-execution_count="14">
+<div id="331ce1a4" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1556,7 +1556,7 @@ Caution
 <ul>
 <li>At a significance level of <code>0.05</code>, perform Tukey’s HSD test to compare the mean anxiety reduction across the three therapy groups.</li>
 </ul>
-<div id="802585cc" class="cell" data-execution_count="15">
+<div id="b1169937" class="cell" data-execution_count="15">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1659,7 +1659,7 @@ Note
 <li>Conduct independent t-tests between all pairs of therapy groups in <code>therapy_pairs</code> and append the p-values (<code>p_val</code>) to the <code>p_values</code> list.</li>
 <li>Apply the Bonferroni correction to adjust the <code>p-values</code> from the multiple tests and print them.</li>
 </ul>
-<div id="ebaba8e2" class="cell" data-execution_count="16">
+<div id="7a1a0d7d" class="cell" data-execution_count="16">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1764,7 +1764,7 @@ Note
 <li>Calculate the mean <code>'Durability_Score'</code> for both <code>'Educational'</code> and <code>'Recreational'</code> toys using a pivot table.</li>
 <li>Perform an independent samples t-test to compare the durability of <code>'Educational'</code> and ‘Recreational’ toys by first separating durability scores by <code>Toy_Type</code>.</li>
 </ul>
-<div id="93d5b60a" class="cell" data-execution_count="17">
+<div id="88e82d4f" class="cell" data-execution_count="17">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1835,7 +1835,7 @@ Note
 <ul>
 <li>Visualize the distribution of <code>'Durability_Score'</code> for Educational and Recreational toys using a Kernel Density Estimate (KDE) plot, highlighting differences by using the <code>'Toy_Type'</code> column to color the distributions differently.</li>
 </ul>
-<div id="006e82e0" class="cell" data-execution_count="18">
+<div id="ded7695b" class="cell" data-execution_count="18">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -2038,7 +2038,7 @@ plt.title('Yield Strength vs. Product Quality by Production Speed')</code></pre>
 <li><p>Question: What does the analysis of approval yields across different credit scores and loan amounts reveal?</p></li>
 </ol>
 <p><em>The data shows that Poor credit scores tend to have similar approval yields across various loan amounts, while Good credit scores exhibit more variability, reflecting different lending criteria based on the loan size.</em></p>
-<div id="9f1f142b" class="cell" data-execution_count="19">
+<div id="0387a5c7" class="cell" data-execution_count="19">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -2078,7 +2078,7 @@ plt.title('Yield Strength vs. Product Quality by Production Speed')</code></pre>
 <li><p>Merge <code>loan_approval_yield</code> with <code>customer_satisfaction</code>.</p></li>
 <li><p>Create a scatter plot to compare <code>'SatisfactionQuality'</code> versus <code>'ApprovalYield'</code>, coloring the points by <code>'InterestRate'</code>.</p></li>
 </ol>
-<div id="a90d1623" class="cell" data-execution_count="20">
+<div id="759b9956" class="cell" data-execution_count="20">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -2186,7 +2186,7 @@ data=mineral_rocks, lowess=True)</code></pre>
 <ul>
 <li>Use an appropriate plot to check for heteroscedasticity between <code>'NutrientRetention'</code> and <code>'ShelfLife'</code>.</li>
 </ul>
-<div id="4bf7d8da" class="cell" data-execution_count="21">
+<div id="a4e47641" class="cell" data-execution_count="21">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -2265,7 +2265,7 @@ data=mineral_rocks, lowess=True)</code></pre>
 <li>Visualize the original distribution of the <code>'ShelfLife'</code> column.</li>
 <li>Visualize the distribution of the <code>'ShelfLifeTransformed'</code>.</li>
 </ol>
-<div id="650bc1eb" class="cell" data-execution_count="22">
+<div id="55ca0fb3" class="cell" data-execution_count="22">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -2427,7 +2427,7 @@ Kruskal-Wallis test p-value: 0.0630</code></pre>
 <ul>
 <li>Perform a Mann Whitney U test to compare nutrient retention between Freezing and Canning methods.</li>
 </ul>
-<div id="a5b71c6b" class="cell" data-execution_count="23">
+<div id="875ce16a" class="cell" data-execution_count="23">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -2536,7 +2536,7 @@ Note
 <ol type="1">
 <li>Create a boxen plot to explore the distribution of nutrient retention across the three different preservation methods.</li>
 </ol>
-<div id="6864d6fa" class="cell" data-execution_count="24">
+<div id="c2401120" class="cell" data-execution_count="24">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -4108,9 +4108,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb61-1021"><a href="#cb61-1021" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb61-1022"><a href="#cb61-1022" aria-hidden="true" tabindex="-1"></a>There are two common post-hoc methods: Tukey's HSD, named after statistician John Tukey, which is known for its robustness in multiple comparisons. There's also the Bonferroni correction, named after mathematician Carlo Bonferroni, which adjusts p-values to control for Type I errors. For broader comparisons, use Tukey's HSD; Bonferroni is better for reducing false positives in more focused tests.</span>
 <span id="cb61-1023"><a href="#cb61-1023" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb61-1024"><a href="#cb61-1024" aria-hidden="true" tabindex="-1"></a>1 (https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey)<span class="co">[</span><span class="ot">https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey</span><span class="co">]</span></span>
+<span id="cb61-1024"><a href="#cb61-1024" aria-hidden="true" tabindex="-1"></a>1 <span class="co">[</span><span class="ot">https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey</span><span class="co">](https://www.amphilsoc.org/item-detail/photograph-john-wilder-tukey)</span></span>
 <span id="cb61-1025"><a href="#cb61-1025" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb61-1026"><a href="#cb61-1026" aria-hidden="true" tabindex="-1"></a>2 (https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni)<span class="co">[</span><span class="ot">https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni</span><span class="co">]</span></span>
+<span id="cb61-1026"><a href="#cb61-1026" aria-hidden="true" tabindex="-1"></a>2 <span class="co">[</span><span class="ot">https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni</span><span class="co">](https://en.wikipedia.org/wiki/Carlo_Emilio_Bonferroni)</span></span>
 <span id="cb61-1027"><a href="#cb61-1027" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb61-1028"><a href="#cb61-1028" aria-hidden="true" tabindex="-1"></a><span class="fu">#### The dataset: marketing ad campaigns {.unnumbered}</span></span>
 <span id="cb61-1029"><a href="#cb61-1029" aria-hidden="true" tabindex="-1"></a></span>
