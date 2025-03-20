@@ -488,7 +488,7 @@ Given the returned Anderson-Darling test result, what could you conclude at the 
 
 You'll delve into sophisticated experimental design techniques, focusing on factorial designs, randomized block designs, and covariate adjustments. These methodologies are instrumental in enhancing the accuracy, efficiency, and interpretability of experimental results. Through a combination of theoretical insights and practical applications, you'll acquire the skills needed to design, implement, and analyze complex experiments in various fields of research.
 
-### Chapter 2.1: Factorial designs: principles and applications {sec-Chapter2.1}
+### Chapter 2.1: Factorial designs: principles and applications {#sec-Chapter2.1}
 
 Welcome back! In this lesson, we'll explore factorial designs.
 
@@ -729,7 +729,7 @@ print(within_block_anova)
 **An ANOVA analysis was performed to compare productivity scores across different blocks for the three treatment groups. The results show that all three p-values exceed the alpha threshold of 0.05, indicating no significant differences in productivity scores among the treatment groups within the blocks.**
 :::
 
-### Chapter 2.4: Covariate adjustment in experimental design {#sec-Chapter2.4}
+### Chapter 2.3: Covariate adjustment in experimental design {#sec-Chapter2.3}
 
 Let's now explore covariates in experimental design and analysis, and how they can be used to minimize confounding. We'll also learn about ANCOVA, or analysis of covariance, for evaluating treatment effects while controlling for covariates.
 
@@ -762,7 +762,7 @@ Looking at the second and third rows of this second portion of output from summa
 This seaborn lmplot shows treatment effects adjusted for the covariate. The regression lines for each treatment category offer a visual representation of how treatment effects trend across different levels of the covariate. We see that `Organic` remains relatively constant going from 1 watering to 7 `Watering_Days_Per_Week`. Synthetic shows an increase. The crossing regression lines suggest we may want to add an interaction term of `Watering_Days_Per_Week` by `Fertilizer_Type` in another model. Parallel lines would suggest a lack of interaction.
 
 
-### Exercise 2.4.1
+### Exercise 2.3.1
 
 #### Covariate adjustment with chick growth {.unnumbered}
 
@@ -1339,7 +1339,7 @@ plt.ylabel('Density')
 plt.show()
 ```
 
-### Chapter 3.4: Power analysis: sample and effect size (#sec-Chapter3.4)
+### Chapter 3.4: Power analysis: sample and effect size {#sec-Chapter3.4}
 
 We now dive into the intricacies of power analysis, focusing on understanding effect size and how it influences sample size.
 
